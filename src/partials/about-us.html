@@ -2,8 +2,11 @@
     <div class="container">
 
         <div class="jewelry-image-thumb">
-            <img src="../img/Placeholder-Lightbox.jpg" alt="Процес виготовлення ювелірного виробу майстром вручну"
-                class="jewelry-img">
+            <img src="../img/Placeholder-Lightbox.jpg"
+                 srcset="../img/Placeholder-Lightbox.jpg 1x,
+                 ../img/Placeholder-Lightbox@2x.jpg 2x"
+                 alt="Процес виготовлення ювелірного виробу майстром вручну" width="640"
+                 class="jewelry-img">
         </div>
 
         <div class="jewelry-content">
@@ -16,9 +19,26 @@
             </p>
 
             <ul class="priorities-list">
-                <li class="priority-item">Inspired by Nature</li>
-                <li class="priority-item">Handcrafted with Love</li>
-                <li class="priority-item">Every Piece Tells a Story</li>
+                <li class="priority-item">
+                    <svg class="priority-icon" width="24" height="24">
+                        <use href="../img/sprite.svg#leaf"></use>
+                    </svg>
+                    Inspired by Nature
+                </li>
+
+                <li class="priority-item">
+                    <svg class="priority-icon" width="24" height="24">
+                        <use href="../img/sprite.svg#donate-heart"></use>
+                    </svg>
+                    Handcrafted with Love
+                </li>
+
+                <li class="priority-item">
+                    <svg class="priority-icon" width="24" height="24">
+                        <use href="../img/sprite.svg#book"></use>
+                    </svg>
+                    Every Piece Tells a Story
+                </li>
             </ul>
         </div>
     </div>
