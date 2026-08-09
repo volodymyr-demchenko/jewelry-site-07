@@ -1,0 +1,114 @@
+.jewelry-artistry {
+    padding: 56px 20px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.jewelry-image-thumb {
+    margin-bottom: 24px;
+}
+
+.jewelry-img {
+    object-fit: cover;
+}
+
+.jewelry-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #000000;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.priorities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.priority-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.priority-icon {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .jewelry-artistry {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 80px;
+        padding: 112px 32px;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .jewelry-image-thumb {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+
+    .jewelry-content {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .jewelry-artistry {
+        gap: 80px;
+        padding: 112px 64px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .jewelry-image-thumb {
+        flex-basis: calc((100% - 80px) / 2);
+    }
+
+    .jewelry-content {
+        flex-basis: calc((100% - 80px) / 2);
+    }
+
+    .section-title {
+        font-size: 48px;
+    }
+
+    .section-description {
+        font-size: 18px;
+    }
+}
