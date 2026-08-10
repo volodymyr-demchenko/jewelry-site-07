@@ -1,4 +1,3 @@
-
 button {
   cursor: pointer;
   border: none;
@@ -28,8 +27,6 @@ button {
   flex-shrink: 0;
 }
 
-
-
 .menu-btn {
   display: inline-flex;
   align-items: center;
@@ -47,7 +44,6 @@ button {
 .header-desktop-block {
   display: none;
 }
-
 
 .mobile-menu {
   position: fixed;
@@ -158,7 +154,6 @@ button {
   border-color: #ccc16e;
 }
 
-
 @media only screen and (min-width: 768px) {
   .header-container {
     padding-top: 16px;
@@ -177,7 +172,8 @@ button {
   .header-desktop-block {
     display: flex;
     align-items: center;
-    gap: 16px;
+    flex-grow: 1;          /* Займає весь вільний простір */
+    margin-left: 40px;     /* Відступ від логотипа до посилань */
   }
 
   .header-nav-list {
@@ -202,6 +198,7 @@ button {
     justify-content: center;
 
     padding: 8px 12px;
+    margin-left: auto;      /* Відштовхує кнопку в крайній правий кут */
 
     font-weight: 500;
 
@@ -226,11 +223,11 @@ button {
   }
 }
 
-
-
 @media only screen and (min-width: 1440px) {
+  .header-desktop-block {
+    margin-left: 80px;     /* Більший відступ від логотипа на десктопі */
+  }
 
-  .header-desktop-block,
   .header-nav-list {
     gap: 40px;
   }
