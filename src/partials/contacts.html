@@ -1,0 +1,105 @@
+<section class="contact-section">
+  <div class="container">
+
+    <div class="header-block">
+      <span class="subtitle">Connect</span>
+      <h2 class="title">Order your unique jewelry</h2>
+      <p class="description">We'd love to hear more details from you!</p>
+    </div>
+
+    <div class="content-grid">
+      
+      <div class="form-wrapper">
+        <form class="form" onsubmit="event.preventDefault()">
+          
+          <div class="field-group">
+            <label class="label" for="user-name">Name*</label>
+            <input 
+              class="input" 
+              type="text" 
+              id="user-name" 
+              name="name" 
+              placeholder="Tony" 
+              required 
+              pattern="^[a-zA-Z\s\.]{5,28}$" 
+            />
+          </div>
+
+          <div class="field-group">
+            <label class="label" for="user-phone">Phone*</label>
+            <input 
+              class="input" 
+              type="tel" 
+              id="user-phone" 
+              name="phone" 
+              placeholder="+1 234 567 8900" 
+              required 
+              pattern="^\+[0-9\s]{14}$" 
+            />
+          </div>
+
+          <div class="field-group">
+            <label class="label" for="user-message">Describe what you want</label>
+            <textarea 
+              class="textarea" 
+              id="user-message" 
+              name="message" 
+              placeholder="Type your message..." 
+              maxlength="500"
+            ></textarea>
+          </div>
+
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <ul class="info-wrapper">
+        <li class="info-item">
+          <div class="icon-wrapper">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 6L12 13L2 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="info-title">Email</span>
+            <a href="mailto:info@handmadejewelry.com" class="info-link">info@handmadejewelry.com</a>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="icon-wrapper">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 16.92V19.92C22.0011 20.1986 21.9441 20.4742 21.8325 20.7294C21.7209 20.9846 21.5573 21.2136 21.352 21.4021C21.1468 21.5905 20.9037 21.7347 20.6402 21.8263C20.3768 21.9179 20.0983 21.9548 19.82 21.94C16.7428 21.5986 13.7885 20.5341 11.19 18.81C8.77382 17.2147 6.72533 15.1662 5.13 12.75C3.39981 10.1388 2.33333 7.16634 2 4.07C1.98523 3.79288 2.02181 3.51543 2.10853 3.25301C2.19525 2.99059 2.33036 2.74837 2.5057 2.53805C2.68104 2.32773 2.89311 2.15349 3.12933 2.02568C3.36555 1.89787 3.62145 1.81907 3.88 1.79H6.88C7.35339 1.78572 7.81491 1.95449 8.18131 2.26425C8.54772 2.574 8.79471 3.00445 8.88 3.48C9.04373 4.41755 9.30397 5.34211 9.65 6.24C9.78203 6.57997 9.81156 6.9504 9.73475 7.30737C9.65794 7.66434 9.47805 7.99347 9.22 8.25L7.93 9.54C9.39578 12.1227 11.5773 14.3042 14.16 15.77L15.45 14.48C15.7065 14.222 16.0357 14.0421 16.3926 13.9653C16.7496 13.8885 17.12 13.918 17.46 14.05C18.3579 14.396 19.2825 14.6563 20.22 14.82C20.7001 14.9062 21.1347 15.1574 21.4449 15.5293C21.7551 15.9012 21.9224 16.368 21.92 16.85L22 16.92Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="info-title">Phone</span>
+            <a href="tel:+15550000000" class="info-link">+1 (555) 000-0000</a>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="icon-wrapper">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="info-title">Office</span>
+            <a 
+              href="https://maps.google.com/?q=76-8+Oakington+Manor+Dr,+London,+UK" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="info-link info-text-link"
+            >
+              76-8 Oakington Manor Dr, London, UK
+            </a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
