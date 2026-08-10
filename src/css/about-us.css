@@ -10,15 +10,12 @@
     gap: 32px;
 }
 
-.jewelry-image-thumb {
-    margin-bottom: 24px;
-}
-
 .jewelry-img {
     object-fit: cover;
 }
 
 .jewelry-content {
+    gap: 24px;
     display: flex;
     flex-direction: column;
 }
@@ -41,6 +38,7 @@
 }
 
 .priority-item {
+    gap: 8px;
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -51,7 +49,7 @@
 .priority-icon {
     fill: none;
     stroke: currentColor;
-    stroke-width: 2;
+    stroke-width: 0;
     flex-shrink: 0;
 }
 
@@ -74,10 +72,12 @@
     }
 
     .jewelry-image-thumb {
+        gap: 32px;
         flex-basis: calc((100% - 32px) / 2);
     }
 
     .jewelry-content {
+        gap: 24px;
         flex-basis: calc((100% - 32px) / 2);
     }
 }
@@ -97,10 +97,12 @@
     }
 
     .jewelry-image-thumb {
+        gap: 32px;
         flex-basis: calc((100% - 80px) / 2);
     }
 
     .jewelry-content {
+        gap: 24px;
         flex-basis: calc((100% - 80px) / 2);
     }
 
@@ -110,5 +112,9 @@
 
     .section-description {
         font-size: 18px;
+    }
+
+    .priority-item {
+        gap: 8px;
     }
 }
