@@ -1,0 +1,128 @@
+.gallery-title{
+    color: #000000;
+    width: 335;
+    height: 43;
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: -1%;
+    text-align: center;
+}
+.gallery-description{
+    width: 335;
+    height: 54;
+    color: #000000;
+    font-family: Mulish;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-images{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 64px;
+    padding-right: 20px;
+    padding-bottom: 64px;
+    padding-left: 20px;
+}
+.gallery-item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.gallery-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media (min-width: 768px) {
+    .gallery-text {
+        margin-bottom: 80px;
+    }
+    .gallery-list {
+        flex-direction: row;
+    }
+
+    .gallery-item {
+        width: calc((100% - 16px) / 2);
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-item>img {
+        object-fit: cover;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .left>img:nth-child(1),
+    .right>img:nth-child(2) {
+        height: 368px;
+        width: 340px;
+    }
+
+    .left>img:nth-child(2),
+    .right>img:nth-child(1) {
+        height: 216px;
+        width: 340px;
+    }
+}
+@media (min-width: 1440px) {
+    .gallery-text {
+        margin-bottom: 80px;
+    }
+
+    .gallery-list {
+        flex-direction: row;
+    }
+
+    .gallery-item {
+        width: calc((100% - 16px) / 2);
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-item>img {
+        object-fit: cover;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .left>img:nth-child(1),
+    .right>img:nth-child(2) {
+        height: 640px;
+        width: 640px;
+    }
+
+    .left>img:nth-child(2),
+    .right>img:nth-child(1) {
+        height: 426px;
+        width: 640px;
+    }
+}
