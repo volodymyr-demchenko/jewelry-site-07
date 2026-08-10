@@ -1,4 +1,12 @@
 
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
 .header {
   width: 100%;
   background-color: #ffffff;
@@ -9,20 +17,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
 }
-
 
 .logo {
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
-}
-
-.logo-icon {
-  display: block;
-  max-height: 48px;
-  width: 160px;
 }
 
 
@@ -31,24 +34,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  flex-shrink: 0;
   width: 48px;
   height: 48px;
-
-  padding: 0;
-
-  background-color: transparent;
-  border: none;
-
-  color: #000000;
-  cursor: pointer;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-btn:hover,
-.menu-btn:focus {
-  color: #ccc16e;
 }
 
 .menu-btn-icon {
@@ -56,30 +44,27 @@
   fill: currentColor;
 }
 
-
-
-
 .header-desktop-block {
   display: none;
 }
 
 
-
 .mobile-menu {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
   z-index: 999;
 
   display: flex;
   flex-direction: column;
 
-  width: 100%;
-  height: 100dvh;
-
-
-  padding: 24px 20px;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  padding: 20px;
 
   background-color: #ffffff;
+  overflow-y: auto;
 
   opacity: 0;
   visibility: hidden;
@@ -95,21 +80,17 @@
 
 .mobile-menu.is-open {
   transform: translateX(0);
-
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-
-
 .mobile-menu-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .mobile-menu-logo {
@@ -117,38 +98,16 @@
   align-items: center;
 }
 
-.mobile-menu-logo-icon {
-  display: block;
-  max-height: 48px;
-  width: auto;
+.mobile-menu-logo-img {
+  width: 120px;
 }
-
-
-
 
 .mobile-menu-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   width: 24px;
   height: 24px;
-
-  padding: 0;
-
-  background-color: transparent;
-  border: none;
-
-  color: #000000;
-  cursor: pointer;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.mobile-menu-btn:hover,
-.mobile-menu-btn:focus {
-  color: #ccc16e;
 }
 
 .mobile-menu-btn-icon {
@@ -156,55 +115,21 @@
   fill: currentColor;
 }
 
-
-
 .mobile-menu-list {
   display: flex;
   flex-direction: column;
-
   gap: 24px;
-
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
 }
 
 .mobile-menu-link {
   display: block;
-
-  font-family: "Sora", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-
-  color: #000000;
-  text-decoration: none;
-
-
-  transition:
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
-  color: #000000;
   text-decoration: underline;
 }
-
-
-.mobile-menu-link:active {
-  color: #bfaed3;
-}
-
-
-.mobile-menu-link.current {
-  color: #ccc16e;
-}
-
-
 
 .mobile-menu-order-btn {
   display: flex;
@@ -212,56 +137,39 @@
   justify-content: center;
 
   width: 100%;
-  height: 44px;
+  height: 40px;
 
-
-  margin-top: 64px;
-  padding: 0;
-
-  font-size: 14px;
-  line-height: 1.5;
-
+  margin-top: 40px;
 
   color: #111111;
   background-color: #ccc16e;
 
   border: 1px solid transparent;
-  border-radius: 0;
-
-  text-decoration: none;
-  cursor: pointer;
-
   transition:
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .mobile-menu-order-btn:hover,
 .mobile-menu-order-btn:focus {
-
+  color: #000000;
   background-color: #ffffff;
   border-color: #ccc16e;
 }
 
 
-.mobile-menu-order-btn:active {
-  background-color: #bdae5d;
-}
-
-
-
-
 @media only screen and (min-width: 768px) {
   .header-container {
-    padding: 12px 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
-  .menu-btn {
-    display: none;
+  .logo-img {
+    width: 84px;
   }
 
+  .menu-btn,
   .mobile-menu {
     display: none;
   }
@@ -269,47 +177,23 @@
   .header-desktop-block {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    gap: 16px;
   }
-
-
-
 
   .header-nav-list {
     display: flex;
     align-items: center;
-
-    gap: 16px;
-
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
+    gap: 12px;
   }
 
   .header-nav-link {
-    display: block;
-    font-size: 14px;
-    line-height: 1.5;
-
-    color: #000000;
-    text-decoration: none;
     white-space: nowrap;
-
-    transition:
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
 
   .header-nav-link:hover,
   .header-nav-link:focus {
-    color: #000000;
     text-decoration: underline;
-  }
-
-  .header-nav-link:active {
-    color: #bfaed3;
   }
 
   .header-btn {
@@ -317,70 +201,41 @@
     align-items: center;
     justify-content: center;
 
-    padding: 6px 12px;
-    width: 119px;
-    height: 36px;
-
-    margin-left: 48.5px;
+    padding: 8px 12px;
 
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-
 
     color: #111111;
     background-color: #ccc16e;
-
     border: 1px solid transparent;
-
-
-    text-decoration: none;
     white-space: nowrap;
+    flex-shrink: 0;
 
-    cursor: pointer;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
-
     transition:
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-
   .header-btn:hover,
   .header-btn:focus {
+    color: #000000;
     background-color: #ffffff;
     border-color: #ccc16e;
-  }
-
-  .header-btn:active {
-    background-color: #bdae5d;
   }
 }
 
 
-@media only screen and (min-width: 1440px) {
-  .header-container {
-    padding: 12px 20px;
-  }
 
+@media only screen and (min-width: 1440px) {
+
+  .header-desktop-block,
   .header-nav-list {
     gap: 40px;
   }
 
   .header-btn {
-    margin-left: 40px;
     padding: 10px 24px;
   }
-}
-.header-btn {
-
-  width: 119px;
-  height: 36px;
-
-
-
-
-
-
 }
