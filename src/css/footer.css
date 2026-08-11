@@ -12,7 +12,7 @@
 .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
 }
 
 .footer-logo {
@@ -21,7 +21,7 @@
 
 .footer-social-list {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -34,13 +34,12 @@
 }
 
 .footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     list-style: none;
     padding: 0;
     margin: 0;
-
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
 }
 
 .footer-nav-link {
@@ -59,21 +58,20 @@
 
 .footer-bottom {
     margin-top: 48px;
-    padding-top: 24px;
+    padding-top: 32px;
     border-top: 1px solid #d9d9d9;
 }
 
 .footer-copy {
     margin: 0;
     text-align: center;
-
     font-family: "Mulish", sans-serif;
     font-size: 14px;
     line-height: 150%;
     color: #000000;
 }
 
-/*Tablet*/
+/* Tablet */
 @media screen and (min-width: 768px) {
     .footer {
         padding: 64px 32px;
@@ -94,18 +92,17 @@
     }
 }
 
-/*Desktop*/
+/* Desktop */
 @media screen and (min-width: 1440px) {
     .footer {
         padding: 80px 64px;
     }
 
-    .footer-wrapper {
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
     .footer-bottom {
         margin-top: 80px;
     }
+  .footer {
+      background-color: #ffffff;
+      padding: 48px 16px 24px;
+  }
 }
