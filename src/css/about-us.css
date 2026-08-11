@@ -20,6 +20,12 @@
     flex-direction: column;
 }
 
+.jewelry-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .section-title {
     font-size: 36px;
     color: #000000;
@@ -46,11 +52,27 @@
     color: #000000;
 }
 
-.priority-icon {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 0;
+.priority-item::before {
+    content: "";
+    display: inline-block;
     flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-leaf::before {
+    background-image: url(../img/leaf.svg)
+}
+
+.icon-heart::before {
+    background-image: url(../img/donate-heart.svg)
+}
+
+.icon-book::before {
+    background-image: url(../img/book.svg)
 }
 
 @media screen and (min-width: 768px) {
