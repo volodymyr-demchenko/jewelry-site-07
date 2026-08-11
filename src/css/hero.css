@@ -26,7 +26,7 @@
 @media only screen and (min-width: 768px) {
   .hero {
     padding-top: 160px;
-    max-height: 864px;
+    height: 864px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)),
@@ -92,7 +92,11 @@
   letter-spacing: -0.01em;
   color: #ffffff;
 }
-
+@media only screen and (min-width: 1440px) {
+  .hero-title {
+    font-size: 56px;
+  }
+}
 .hero-text {
   font-size: 18px;
   color: #ffffff;
