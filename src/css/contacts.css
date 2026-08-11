@@ -154,7 +154,7 @@
   font-size: 15px;
   color: #000000;
   text-decoration: underline;
-  word-break: break-all;
+  word-break: break-word;
   cursor: pointer;
   transition: color 0.2s ease;
 }
@@ -178,8 +178,12 @@
     font-size: 36px;
   }
 
+  .content-grid {
+    gap: 60px; 
+  }
+
   .info-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px 30px;
   }
 
@@ -211,6 +215,12 @@
   }
 
   .info-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
     padding-top: 20px;
+  }
+
+  .info-item.office-item {
+    grid-column: 1 / -1;
   }
 }
