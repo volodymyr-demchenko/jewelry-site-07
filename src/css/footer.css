@@ -43,9 +43,12 @@
 }
 
 .footer-nav-link {
+    font-family: "Mulish", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150;
+    line-height: 150%;
+    color: #000000;
+    text-decoration: none;
 }
 
 .footer-nav-link:hover,
@@ -65,9 +68,11 @@
     font-family: "Mulish", sans-serif;
     font-size: 14px;
     line-height: 150%;
+    color: #000000;
 }
 
 /* Tablet */
+@media screen and (min-width: 768px) {
     .footer {
         padding: 64px 32px;
     }
@@ -85,7 +90,7 @@
     .footer-bottom {
         margin-top: 64px;
     }
-
+}
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
@@ -96,8 +101,4 @@
     .footer-bottom {
         margin-top: 80px;
     }
-  .footer {
-      background-color: #ffffff;
-      padding: 48px 16px 24px;
-  }
 }
