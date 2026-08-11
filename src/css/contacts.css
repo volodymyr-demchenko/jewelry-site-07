@@ -1,11 +1,12 @@
 .contact-section {
-  padding: 60px 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   box-sizing: border-box;
   background-color: #ffffff;
 }
 
 .header-block {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .subtitle {
@@ -17,7 +18,7 @@
 }
 
 .title {
-  font-size: 44px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 16px 0;
@@ -30,10 +31,9 @@
 }
 
 .content-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 80px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .form-wrapper {
@@ -100,7 +100,7 @@
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-  width: fit-content;
+  width: 100%;
   border-radius: 0px;
   transition: background-color 0.2s ease;
 }
@@ -117,14 +117,10 @@
 .info-wrapper {
   list-style: none;
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px 30px;
-}
-
-.info-item.office-item {
-  grid-column: 1 / -1;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .info-item {
@@ -171,38 +167,50 @@
   color: #553c9a;
 }
 
-@media (max-width: 1024px) {
-  .content-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .info-wrapper {
-    order: -1;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 0;
+/* Tablet / Medium screens */
+@media only screen and (min-width: 768px) {
+  .contact-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .title {
     font-size: 36px;
   }
-}
-
-@media (max-width: 768px) {
-  .contact-section {
-    padding: 40px 16px;
-  }
 
   .info-wrapper {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
   }
 
   .info-item.office-item {
-    grid-column: auto;
+    grid-column: 1 / -1;
+  }
+
+  .submit-btn {
+    width: fit-content;
+  }
+}
+
+/* Desktop / Large screens */
+@media only screen and (min-width: 1440px) {
+  .contact-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .title {
-    font-size: 28px;
+    font-size: 44px;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .info-wrapper {
+    padding-top: 20px;
   }
 }
