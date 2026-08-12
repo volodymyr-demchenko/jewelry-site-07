@@ -4,7 +4,7 @@
     background-color: #ffffff
 }
 
-.container.jewelry-container {
+.jewelry-artistry .container {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -95,7 +95,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .container.jewelry-container {
+    .jewelry-artistry .container {
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
