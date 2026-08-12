@@ -4,7 +4,7 @@
     background-color: #ffffff
 }
 
-.container.jewelry-container {
+.jewelry-artistry .container {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -69,15 +69,15 @@
 }
 
 .icon-leaf::before {
-    background-image: url(../img/leaf.svg);
+    background-image: url(./img/leaf.svg);
 }
 
 .icon-heart::before {
-    background-image: url(../img/donate-heart.svg);
+    background-image: url(./img/donate-heart.svg);
 }
 
 .icon-book::before {
-    background-image: url(../img/book.svg);
+    background-image: url(./img/book.svg);
 }
 
 @media screen and (min-width: 768px) {
@@ -95,7 +95,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .container.jewelry-container {
+    .jewelry-artistry .container {
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
