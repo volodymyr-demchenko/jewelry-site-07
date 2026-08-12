@@ -69,15 +69,15 @@
 }
 
 .icon-leaf::before {
-    background-image: url(../img/leaf.svg);
+    background-image: url(./img/leaf.svg);
 }
 
 .icon-heart::before {
-    background-image: url(../img/donate-heart.svg);
+    background-image: url(./img/donate-heart.svg);
 }
 
 .icon-book::before {
-    background-image: url(../img/book.svg);
+    background-image: url(./img/book.svg);
 }
 
 @media screen and (min-width: 768px) {
