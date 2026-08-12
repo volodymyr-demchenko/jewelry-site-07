@@ -32,7 +32,7 @@
 .jewelry-header {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 }
 
 .section-title {
@@ -46,7 +46,7 @@
 .priorities-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
 .priority-item {
@@ -86,11 +86,11 @@
     }
 
     .jewelry-img {
-        height: 486px;
+        height: 456px;
     }
     
     .section-title {
-        font-size: 40px;
+        font-size: 36px;
     }
 }
 
