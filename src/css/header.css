@@ -33,6 +33,8 @@ button {
   width: 48px;
   height: 48px;
   margin-right: -8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .menu-btn-icon {
@@ -173,13 +175,13 @@ button {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    margin-left: 40px;
+    margin-left: 48.5px;
   }
 
   .header-nav-list {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
   }
 
   .header-nav-link {
@@ -199,6 +201,7 @@ button {
 
     padding: 8px 12px;
     margin-left: auto;
+    width: 119px;
 
     font-weight: 500;
 
@@ -224,15 +227,20 @@ button {
 }
 
 @media only screen and (min-width: 1440px) {
-  .header-desktop-block {
-    margin-left: 80px;
+  .header-container{
+            padding-top: 18px;
+        padding-bottom: 18px;
+  }
+  .header-desktop-block{
+    margin-left: 32px;
   }
 
   .header-nav-list {
-    gap: 40px;
+    gap: 32px;
   }
 
   .header-btn {
-    padding: 10px 24px;
+    padding: 6px 55px;
+    width: 192px;
   }
 }
