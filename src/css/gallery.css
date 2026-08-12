@@ -43,17 +43,22 @@
   flex-direction: column;
   gap: 16px;
 }
+
 @media (min-width: 768px) {
   .gallery-text {
     margin-bottom: 80px;
   }
   .gallery-list {
     flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    height: 626px;
+    width: 704px;
   }
 
   .gallery-item {
-    display: flex;
-    flex-direction: column;
+    width: calc((100% - 24px) / 2);
+    position: absolute;
   }
 
   .gallery-item > img {
@@ -61,64 +66,57 @@
     width: 100%;
     overflow: hidden;
   }
-  .gallery-item.left{
-    gap: 34px;
-  }
-    .gallery-item.right{
-    gap: 24px;
-  }
 
-  .left > img:nth-child(1) {
+  .gallery-item:nth-child(1) {
     height: 368px;
     width: 340px;
+    top: 0;
+    left: 0;
   }
-  .left > img:nth-child(2) {
+  .gallery-item:nth-child(2) {
     width: 340px;
     height: 226px;
+    bottom: 0;
+    left: 0;
   }
-  .right > img:nth-child(2) {
-    height: 386px;
-    width: 340px;
-  }
-  .right > img:nth-child(1) {
+  .gallery-item:nth-child(3) {
     height: 216px;
     width: 340px;
+    top: 0;
+    right: 0;
+  }
+  .gallery-item:nth-child(4) {
+    height: 386px;
+    width: 340px;
+    bottom: 0;
+    right: 0;
   }
 }
 @media (min-width: 1440px) {
-    .gallery-title{
-        font-size: 48px;
-    }
+  .gallery-title {
+    font-size: 48px;
+  }
   .gallery-text {
     margin-bottom: 80px;
   }
 
   .gallery-list {
-    flex-direction: row;
+    height: 1098px;
+    width: 1312px;
   }
 
   .gallery-item {
-    width: calc((100% - 16px) / 2);
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
+    width: calc((100% - 32px) / 2);
   }
 
-  .gallery-item > img {
-    object-fit: cover;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .left > img:nth-child(1),
-  .right > img:nth-child(2) {
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(4) {
     height: 640px;
     width: 640px;
   }
-
-  .left > img:nth-child(2),
-  .right > img:nth-child(1) {
-    height: 426px;
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(3) {
     width: 640px;
+    height: 426px;
   }
 }
