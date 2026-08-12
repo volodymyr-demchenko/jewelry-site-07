@@ -1,57 +1,103 @@
 body {
-    font-family: "Mulish", sans-serif;
-    line-height: 1.5;
-    color: #000000;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.5;
+  color: #000000;
 }
 
 h1,
 h2,
 h3 {
-    font-family: "Sora", sans-serif;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    margin: 0;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .container {
-    min-width: 320px;
-    max-width: 375px;
-    margin: 0 auto;
-    padding: 0 20px;
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media only screen and (min-width: 768px) {
-.container {
+  .container {
     max-width: 768px;
     padding: 0 32px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-.container {
+  .container {
     max-width: 1440px;
     padding: 0 64px;
   }
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #ccc16e;
+  border: 1px solid #ccc16e;
+    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  padding: 6px 12px;
+  width: 100%;
+  height: 36px;
+  transition:
+    background-color 250ms ease,
+    box-shadow 250ms ease;
+}
+
+
+.btn:hover,
+.btn:focus {
+  background-color: #ffffff;
+}
+
+.btn:active {
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+  background-color: #CCC16E;
+}
+.btn:disabled {
+  background: #CCC16E;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
